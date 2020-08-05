@@ -19,12 +19,12 @@ module.exports = {
         loader: "babel-loader",
         exclude: /node_modules/,
         options: {
-          presets: ["@babel/preset-react"]
+          presets: ["@babel/preset-react"],
         },
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
@@ -34,7 +34,6 @@ module.exports = {
       library: { type: "var", name: "app3" },
       remotes: {
         app1: "app1",
-        app2: "app2",
       },
       shared: ["react", "react-dom"],
     }),
